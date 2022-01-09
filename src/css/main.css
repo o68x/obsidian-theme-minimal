@@ -7009,6 +7009,32 @@ body .kanban-plugin__markdown-preview-view ul, .kanban-plugin__markdown-preview-
   .kanban-plugin__lane {
     width: 100% !important;
     margin-bottom: 1rem !important; } }
+/* Map View plugin */
+.leaflet-popup-content {
+  margin: 10px; }
+
+.map-view-marker-name {
+  font-weight: 400; }
+
+.leaflet-control-attribution {
+  display: none; }
+
+.workspace-leaf-content[data-type="map"] .graph-controls {
+  background-color: var(--background-primary); }
+
+body .leaflet-bar a {
+  background-color: var(--background-primary); }
+
+body .leaflet-bar a:hover {
+  background-color: var(--background-tertiary); }
+
+body .leaflet-touch .leaflet-control-layers,
+body .leaflet-touch .leaflet-bar {
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.leaflet-control a {
+  cursor: var(--cursor); }
+
 /* Outliner plugin (pre Live Preview) */
 body.outliner-plugin-bls .CodeMirror-line .cm-hmd-list-indent::before {
   background-image: linear-gradient(to right, var(--background-modifier-border) 1px, transparent 1px);
