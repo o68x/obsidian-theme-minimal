@@ -14,8 +14,10 @@
 .el-h2 + .el-h2 {
   margin-top:0rem;
 }
+.el-p + .el-lang-leaflet,
 .el-ol + .el-lang-dataview,
 .el-ul + .el-lang-dataview,
+.el-div + .el-lang-dataview,
 .el-p:not(.el-lang-dataview) + .el-lang-dataview,
 .el-ol + .el-table,
 .el-ul + .el-table,

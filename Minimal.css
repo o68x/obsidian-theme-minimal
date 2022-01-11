@@ -128,7 +128,7 @@ SOFTWARE.
   /* List padding */
   --radius-s:2px;
   --radius-m:5px;
-  --radius-l:10px;
+  --radius-l:8px;
   --input-height:32px;
   --header-height:40px;
   --red:#d04255;
@@ -444,7 +444,8 @@ body.is-dragging {
 
 .markdown-source-view.mod-cm6 .cm-embed-block {
   padding: 0;
-  border: 0; }
+  border: 0;
+  border-radius: 0; }
 
 .markdown-source-view.mod-cm6 .cm-embed-block:hover {
   border: 0; }
@@ -4271,24 +4272,31 @@ body:not(.is-mobile):not(.zoom-off) .view-content .image-embed:active img {
 .contextual-typography.minimal-folding:not(.is-mobile):not(.table-100):not(.table-wide):not(.table-max) .el-lang-dataview .dataview.table-view-table {
   max-width: calc(var(--line-width-adaptive) - var(--folding-offset)); }
 
+.contextual-typography.minimal-folding:not(.is-mobile).map-100 .markdown-preview-view .markdown-preview-sizer > .el-lang-leaflet,
+.contextual-typography.minimal-folding:not(.is-mobile).map-max .markdown-preview-view .markdown-preview-sizer > .el-lang-leaflet,
+.contextual-typography.minimal-folding:not(.is-mobile).map-wide .markdown-preview-view .markdown-preview-sizer > .el-lang-leaflet,
+.contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.map-100 .markdown-preview-sizer > .el-lang-leaflet,
+.contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.map-max .markdown-preview-sizer > .el-lang-leaflet,
+.contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.map-wide .markdown-preview-sizer > .el-lang-leaflet,
+.contextual-typography.minimal-folding:not(.is-mobile).table-100 .markdown-preview-view .markdown-preview-sizer > .el-lang-dataview,
+.contextual-typography.minimal-folding:not(.is-mobile).table-max .markdown-preview-view .markdown-preview-sizer > .el-lang-dataview,
+.contextual-typography.minimal-folding:not(.is-mobile).table-wide .markdown-preview-view .markdown-preview-sizer > .el-lang-dataview,
 .contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.table-100 .markdown-preview-sizer > .el-lang-dataview,
-.contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.table-100 .markdown-preview-sizer > .el-table,
-.contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.table-wide .markdown-preview-sizer > .el-lang-dataview,
-.contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.table-wide .markdown-preview-sizer > .el-table,
 .contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.table-max .markdown-preview-sizer > .el-lang-dataview,
+.contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.table-wide .markdown-preview-sizer > .el-lang-dataview,
+.contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.table-100 .markdown-preview-sizer > .el-table,
 .contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.table-max .markdown-preview-sizer > .el-table,
+.contextual-typography.minimal-folding:not(.is-mobile).table-100 .markdown-preview-view .markdown-preview-sizer > .el-table,
+.contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.table-wide .markdown-preview-sizer > .el-table,
+.contextual-typography.minimal-folding:not(.is-mobile).table-max .markdown-preview-view .markdown-preview-sizer > .el-table,
+.contextual-typography.minimal-folding:not(.is-mobile).table-wide .markdown-preview-view .markdown-preview-sizer > .el-table,
 .contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.iframe-100 .markdown-preview-sizer > .el-iframe,
 .contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.iframe-max .markdown-preview-sizer > .el-iframe,
+.contextual-typography.minimal-folding:not(.is-mobile).iframe-100 .markdown-preview-view .markdown-preview-sizer > .el-iframe,
+.contextual-typography.minimal-folding:not(.is-mobile).iframe-max .markdown-preview-view .markdown-preview-sizer > .el-iframe,
+.contextual-typography.minimal-folding:not(.is-mobile).iframe-wide .markdown-preview-view .markdown-preview-sizer > .el-iframe,
 .contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.img-100 .markdown-preview-sizer > .el-embed-image,
 .contextual-typography.minimal-folding:not(.is-mobile) .markdown-preview-view.img-max .markdown-preview-sizer > .el-embed-image,
-.contextual-typography.minimal-folding:not(.is-mobile).table-100 .markdown-preview-view .markdown-preview-sizer > .el-table,
-.contextual-typography.minimal-folding:not(.is-mobile).table-100 .markdown-preview-view .markdown-preview-sizer > .el-lang-dataview,
-.contextual-typography.minimal-folding:not(.is-mobile).table-max .markdown-preview-view .markdown-preview-sizer > .el-table,
-.contextual-typography.minimal-folding:not(.is-mobile).table-max .markdown-preview-view .markdown-preview-sizer > .el-lang-dataview,
-.contextual-typography.minimal-folding:not(.is-mobile).table-wide .markdown-preview-view .markdown-preview-sizer > .el-table,
-.contextual-typography.minimal-folding:not(.is-mobile).table-wide .markdown-preview-view .markdown-preview-sizer > .el-lang-dataview,
-.contextual-typography.minimal-folding:not(.is-mobile).iframe-100 .markdown-preview-view .markdown-preview-sizer > .el-iframe,
-.contextual-typography.minimal-folding:not(.is-mobile).iframe-wide .markdown-preview-view .markdown-preview-sizer > .el-iframe,
 .contextual-typography.minimal-folding:not(.is-mobile).img-100 .markdown-preview-view .markdown-preview-sizer > .el-embed-image,
 .contextual-typography.minimal-folding:not(.is-mobile).img-max .markdown-preview-view .markdown-preview-sizer > .el-embed-image,
 .contextual-typography.minimal-folding:not(.is-mobile).img-wide .markdown-preview-view .markdown-preview-sizer > .el-embed-image {
@@ -4332,18 +4340,24 @@ body:not(.is-mobile):not(.zoom-off) .view-content .image-embed:active img {
   padding-right: 20px; }
 
 /* Images and iframes */
+.contextual-typography.map-max .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > .el-lang-leaflet,
+.contextual-typography .markdown-preview-view.is-readable-line-width.map-max .markdown-preview-sizer > .el-lang-leaflet,
 .contextual-typography.iframe-max .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > .el-iframe,
 .contextual-typography .markdown-preview-view.is-readable-line-width.iframe-max .markdown-preview-sizer > .el-iframe,
 .contextual-typography.img-max .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > .el-embed-image,
 .contextual-typography .markdown-preview-view.is-readable-line-width.img-max .markdown-preview-sizer > .el-embed-image {
   width: 100%; }
 
+.contextual-typography.map-wide .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > .el-lang-leaflet,
+.contextual-typography .markdown-preview-view.is-readable-line-width.map-wide .markdown-preview-sizer > .el-lang-leaflet,
 .contextual-typography.iframe-wide .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > .el-iframe,
 .contextual-typography .markdown-preview-view.is-readable-line-width.iframe-wide .markdown-preview-sizer > .el-iframe,
 .contextual-typography.img-wide .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > .el-embed-image,
 .contextual-typography .markdown-preview-view.is-readable-line-width.img-wide .markdown-preview-sizer > .el-embed-image {
   width: var(--line-width-wide); }
 
+.contextual-typography.map-100 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > .el-lang-leaflet,
+.contextual-typography .markdown-preview-view.is-readable-line-width.map-100 .markdown-preview-sizer > .el-lang-leaflet,
 .contextual-typography.iframe-100 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > .el-iframe,
 .contextual-typography .markdown-preview-view.iframe-100 .markdown-preview-sizer > .el-iframe,
 .contextual-typography.img-100 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > .el-embed-image,
@@ -6519,8 +6533,10 @@ body #cMenuModalBar button.cMenuCommandItem:hover {
 .el-h2 + .el-h2 {
   margin-top: 0rem; }
 
+.el-p + .el-lang-leaflet,
 .el-ol + .el-lang-dataview,
 .el-ul + .el-lang-dataview,
+.el-div + .el-lang-dataview,
 .el-p:not(.el-lang-dataview) + .el-lang-dataview,
 .el-ol + .el-table,
 .el-ul + .el-table,
@@ -7084,6 +7100,20 @@ body .kanban-plugin__markdown-preview-view ul, .kanban-plugin__markdown-preview-
   .kanban-plugin__lane {
     width: 100% !important;
     margin-bottom: 1rem !important; } }
+/* Leaflet plugin */
+.leaflet-control-attribution {
+  display: none; }
+
+.block-language-leaflet {
+  border-radius: var(--radius-l);
+  overflow: hidden;
+  border: 1px solid var(--background-modifier-border); }
+
+.map-100 .block-language-leaflet {
+  border-radius: 0px;
+  border-left: none;
+  border-right: none; }
+
 /* Map View plugin */
 .leaflet-popup-content {
   margin: 10px; }
@@ -7568,6 +7598,26 @@ settings:
             - 
                 label: 100% pane width
                 value: iframe-100
+    -
+        id: map-width
+        title: Map width
+        description: Default width for Leaflet maps
+        type: class-select
+        allowEmpty: false
+        default: map-default-width
+        options:
+            - 
+                label: Default
+                value: map-default-width
+            - 
+                label: Wide line width
+                value: map-wide
+            - 
+                label: Maximum line width
+                value: map-max
+            - 
+                label: 100% pane width
+                value: map-100
     -
         id: tables
         title: Tables

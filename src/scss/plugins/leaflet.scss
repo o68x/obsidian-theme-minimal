@@ -1,0 +1,16 @@
+/* Leaflet plugin */
+
+.leaflet-control-attribution {
+	display:none;
+}
+
+.block-language-leaflet {
+	border-radius:var(--radius-l);
+	overflow:hidden;
+	border:1px solid var(--background-modifier-border);
+}
+.map-100 .block-language-leaflet {
+	border-radius:0px;
+	border-left:none;
+	border-right:none;
+}

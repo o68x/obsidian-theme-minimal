@@ -234,6 +234,26 @@ settings:
                 label: 100% pane width
                 value: iframe-100
     -
+        id: map-width
+        title: Map width
+        description: Default width for Leaflet maps
+        type: class-select
+        allowEmpty: false
+        default: map-default-width
+        options:
+            - 
+                label: Default
+                value: map-default-width
+            - 
+                label: Wide line width
+                value: map-wide
+            - 
+                label: Maximum line width
+                value: map-max
+            - 
+                label: 100% pane width
+                value: map-100
+    -
         id: tables
         title: Tables
         type: heading
