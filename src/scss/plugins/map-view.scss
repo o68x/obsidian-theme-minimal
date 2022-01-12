@@ -1,32 +1,8 @@
 /* Map View plugin */
 
-.leaflet-popup-content {
-	margin:10px;
-}
 .map-view-marker-name {
 	font-weight:400;
 }
-
-.leaflet-control-attribution {
-	display:none;
-}
-
 .workspace-leaf-content[data-type="map"] .graph-controls {
 	background-color:var(--background-primary);
-}
-
-body .leaflet-bar a {
-	background-color:var(--background-primary);
-}
-body .leaflet-bar a:hover {
-	background-color:var(--background-tertiary);
-}
-
-body .leaflet-touch .leaflet-control-layers,
-body .leaflet-touch .leaflet-bar {
-	border: 1px solid rgba(0,0,0,0.1);
-}
-
-.leaflet-control a {
-	cursor:var(--cursor);
 }
