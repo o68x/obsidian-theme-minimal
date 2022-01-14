@@ -1,4 +1,14 @@
 /* Leaflet plugin */
+.theme-light {
+	--leaflet-buttons:rgba(255,255,255,0.8);
+}
+.theme-dark {
+	--leaflet-buttons:rgba(0,0,0,0.5);
+}
+
+.markdown-preview-sizer.markdown-preview-section .el-lang-leaflet:nth-child(3) {
+	margin-top:-11px
+}
 
 .leaflet-control-attribution {
 	display:none;
@@ -11,20 +21,35 @@
 	overflow:hidden;
 	border:1px solid var(--background-modifier-border);
 }
+
+.workspace-leaf-content[data-type="obsidian-leaflet-map-view"] .block-language-leaflet {
+	border-radius:0;
+	border:none;
+}
 .map-100 .block-language-leaflet {
 	border-radius:0px;
 	border-left:none;
 	border-right:none;
 }
 
+/* Buttons */
+
+body .block-language-leaflet .leaflet-bar.disabled > a {
+	background-color:transparent;
+	opacity:0.3;
+}
+body .block-language-leaflet .leaflet-control-expandable,
+body .block-language-leaflet .leaflet-distance-control,
 body .leaflet-bar a {
-	background-color:var(--background-tertiary);
-	color:var(--text-normal);
+	background-color:var(--leaflet-buttons);
+	color:var(--text-muted);
+	border:none;
 }
 body .leaflet-bar a:hover {
 	background-color:var(--background-secondary);
+	color:var(--text-normal);
+	border:none;
 }
-
 body .leaflet-touch .leaflet-control-layers,
 body .leaflet-touch .leaflet-bar {
 	border: 1px solid rgba(0,0,0,0.1);
