@@ -7191,7 +7191,7 @@ body .kanban-plugin__markdown-preview-view ul, .kanban-plugin__markdown-preview-
 .theme-dark {
   --leaflet-buttons:rgba(0,0,0,0.5); }
 
-.markdown-preview-sizer.markdown-preview-section .el-lang-leaflet:nth-child(3) {
+.map-100 .markdown-preview-sizer.markdown-preview-section .el-lang-leaflet:nth-child(3) {
   margin-top: -11px; }
 
 .leaflet-control-attribution {
