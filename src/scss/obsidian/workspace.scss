@@ -1,9 +1,20 @@
 /* Workspace */
 
+
+/* Empty state */
 .empty-state {
   background-color:var(--background-primary);
   text-align:center;
 }
+.workspace-leaf-content[data-type="empty"] .view-header,
+.empty-state-title {
+  display:none;
+}
+.empty-state-action-list {
+  color:var(--text-normal);
+  font-size:var(--font-adaptive-normal);
+}
+
 .workspace-split.mod-vertical > .workspace-split {
   padding:0;
 }

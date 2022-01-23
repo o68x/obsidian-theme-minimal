@@ -23,9 +23,6 @@ body:not(.is-mobile) .modal {
   font-size:var(--h2);
   line-height:1.4;
 }
-.modal:not(.mod-sync-history):not(.mod-settings):not(.mod-community-theme):not(.mod-publish):not(.mod-publish):not(.mod-community-plugin):not(.mod-sync-log) .modal-content {
-  padding:20px 2px 5px;
-}
 .modal-content {
   margin-top:0px;
   padding:0;
@@ -35,12 +32,38 @@ body:not(.is-mobile) .modal {
   text-align:left;
   font-size:var(--font-adaptive-small);
 }
+
+.modal-button-container {
+  margin-top:10px
+}
+.modal-button-container button {
+  margin-top:10px
+}
+
+/* Confirm delete */
 .modal-container.mod-confirmation .modal {
-  width:450px;
+  width:480px;
   min-width:0;
 }
 .mod-confirmation .modal-content {
-  margin-top:20px;
+  margin-top:10px;
+}
+.mod-confirmation .modal-button-container {
+  display:flex;
+}
+.mod-confirmation .modal-button-container > .mod-warning:first-child {
+  background:transparent;
+  border:none;
+  font-weight:500;
+  color:var(--text-error);
+  cursor:pointer;
+  margin-right:auto;
+  box-shadow:none;
+  padding-left:0;
+  padding-right:0;
+} 
+.mod-confirmation .modal-button-container > .mod-warning:first-child:hover {
+  text-decoration:underline;
 }
 
 /* Close buttons */
@@ -89,20 +112,40 @@ input.prompt-input:hover {
   padding-left:10px;
   line-height:4;
 }
+.suggestion-container {
+  box-shadow:0 5px 40px rgba(0,0,0,0.2);
+  padding:0 6px;
+  border-radius:8px;
+  background-color:var(--background-primary);
+  border:1px solid var(--background-modifier-border-hover);
+}
 .suggestion-item {
   cursor:var(--cursor);
-  padding-left:10px;
+  padding:4px 10px 4px 10px;
+  border-radius:4px;
+}
+.suggestion-container .suggestion-item:first-child {
+  margin-top:6px;
+}
+.suggestion-container .suggestion-item:last-child {
+  margin-bottom:6px;
+}
+.suggestion-container .suggestion-item {
+  font-size:calc(var(--font-adaptive-normal) * .9) !important;
 }
 .suggestion-hotkey {
   margin-top:0.25em;
 }
 .suggestion-flair {
   left:auto;
-  right:16px;
+  right:8px;
   opacity:0.25;
 }
 .prompt-results .suggestion-flair .filled-pin {
   display:none;
+}
+.prompt-results .suggestion-item {
+  padding:5px 8px 5px 10px;
 }
 .modal-container .suggestion-item.is-selected {
   border-radius:var(--radius-m);
@@ -130,9 +173,6 @@ body:not(.hider-scrollbars) .prompt-results {
 .modal,
 .prompt {
   box-shadow:0 5px 100px rgba(0,0,0,0.15);
-}
-.suggestion-container {
-  box-shadow:0 5px 40px rgba(0,0,0,0.2);
 }
 .prompt {
   border:1px solid var(--modal-border);

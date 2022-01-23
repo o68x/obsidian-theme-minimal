@@ -583,6 +583,25 @@ settings:
                 label: Small caps
                 value: small-caps
     -
+        id: lists
+        title: Lists
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: minimal-strike-lists
+        title: Strike completed tasks
+        description: Use line through greyed text for completed tasks
+        type: class-toggle
+        default: false
+    -
+        id: list-spacing
+        title: List item spacing
+        description: Space between list items
+        type: variable-number
+        default: 0.1
+        format: em
+    -
         id: advanced
         title: Advanced
         type: heading
@@ -604,12 +623,6 @@ settings:
             - 
                 label: Crosshair
                 value: crosshair
-    - 
-        id: minimal-strike-lists
-        title: Strike completed tasks
-        description: Use line through greyed text for completed tasks
-        type: class-toggle
-        default: false
     - 
         id: text-bold
         title: Bold text color
@@ -666,6 +679,12 @@ settings:
         description: 
         type: variable-text
         default: 180px
+    - 
+        id: cards-max-width
+        title: Card maximum width
+        description: Default fills the available width, accepts valid CSS units
+        type: variable-text
+        default: 1fr
     - 
         id: cards-mobile-width
         title: Card minimum width on mobile

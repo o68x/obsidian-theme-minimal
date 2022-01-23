@@ -14,6 +14,7 @@
 .table-tabular table {
   font-variant-numeric:tabular-nums;
 }
+.table-lines table,
 .table-lines .table-view-table  {
   border:1px solid var(--background-modifier-border);
 }
@@ -23,10 +24,36 @@
   border-bottom:1px solid var(--background-modifier-border);
   padding:4px 10px;
 }
+.table-lines thead > tr > th:first-child,
+.table-lines tbody > tr > td:first-child {
+  padding-left:10px;
+}
 .table-nowrap tbody > tr > td {
   white-space:nowrap;
   text-overflow:ellipsis;
   overflow:hidden;
+}
+.table-numbers table {
+  counter-reset:section;
+}
+.table-numbers table > thead > tr > th:first-child::before {
+  content:" ";
+  padding-right:0.5em;
+  display:inline-block;
+  min-width:2em;
+}
+.table-numbers table > tbody > tr > td:first-child::before {
+  counter-increment:section;
+  content:counter(section) " ";
+  text-align:center;
+  padding-right:0.5em;
+  display:inline-block;
+  min-width:2em;
+  color:var(--text-faint);
+  font-variant-numeric:tabular-nums;
+}
+.table-numbers table > tbody > tr > td:first-child {
+  white-space:nowrap;
 }
 .row-highlight tbody > tr:hover td {
   background-color:var(--background-table-rows);

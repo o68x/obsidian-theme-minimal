@@ -4,6 +4,7 @@
 
 :root {
   --cards-min-width:180px;
+  --cards-max-width:1fr;
   --cards-mobile-width:120px;
   --cards-image-height:400px;
   --cards-padding:1.2em;
@@ -33,7 +34,7 @@
   clear:both;
   padding:0.5rem 0;
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(var(--cards-min-width), 1fr));
+  grid-template-columns:repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
   grid-column-gap:0.75rem;
   grid-row-gap:0.75rem;
 }
@@ -51,14 +52,16 @@
 }
 .cards table.dataview > tbody > tr:hover {
   border:var(--cards-border-width) solid var(--background-modifier-border-hover);
-  box-shadow:0 4px 8px 0px rgba(0,0,0,0.05),0 1px 3px 1px rgba(0,0,0,0.025);
+  box-shadow:0 4px 6px 0px rgba(0,0,0,0.05),0 1px 3px 1px rgba(0,0,0,0.025);
   transition:box-shadow 0.15s linear;
 }
 
 /* Styling elements inside cards */
+.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
 .trim-cols .cards table.dataview tbody > tr > td {
   white-space:normal;
 }
+.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
 .cards table.dataview tbody > tr > td {
   border-bottom:none;
   padding:0!important;
@@ -118,6 +121,21 @@
   .cards-cols-3 table.dataview tbody {
     grid-template-columns:repeat(3, minmax(0, 1fr));
   }
+  .cards-cols-4 table.dataview tbody {
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+  }
+  .cards-cols-5 table.dataview tbody {
+    grid-template-columns:repeat(5, minmax(0, 1fr));
+  }
+  .cards-cols-6 table.dataview tbody {
+    grid-template-columns:repeat(6, minmax(0, 1fr));
+  }
+  .cards-cols-7 table.dataview tbody {
+    grid-template-columns:repeat(7, minmax(0, 1fr));
+  }
+  .cards-cols-8 table.dataview tbody {
+    grid-template-columns:repeat(8, minmax(0, 1fr));
+  }
 }
 
 /* Card content */
@@ -175,6 +193,16 @@
   max-height:var(--cards-image-height);
   background-color:var(--background-secondary);
   vertical-align:bottom;
+}
+
+/* ------------------- */
+/* Block button */
+
+.markdown-source-view.mod-cm6.cards .edit-block-button {
+  top:3px;
+  right:32px;
+  opacity:1;
+  background-color:transparent;
 }
 
 /* ------------------- */

@@ -18,7 +18,7 @@ Support development: **@kepano** on [Twitter](https://www.twitter.com/kepano) or
 - [Installation](#installation)
 - [Companion plugins](#companion-plugins)
 - [Plugin support](#plugin-support)
-- [Helper classes](#helper-classes-and-filters)
+- [Helper classes](#helper-filters-and-classes)
 - [Hotkeys](#hotkeys)
 - [Developers](#developers)
 - [Disclaimer](#disclaimer)
@@ -48,7 +48,7 @@ Minimal includes support for dozens of popular plugins like **Calendar**, **Kanb
 
 ![](assets/minimal-plugins.png)
 
-Every screen in the Obsidian app is has been revised to create a cohesive experience, including **settings**, **plugin browser**, **sync**, **publish**, and **file recovery**
+Every screen in the Obsidian app has been revised to create a cohesive experience, including **settings**, **plugin browser**, **sync**, **publish**, and **file recovery**
 
 ![](assets/minimal-modals.png)
 
@@ -70,6 +70,8 @@ The following features can be accessed using [Minimal Theme Settings](https://gi
 - Open Obsidian Settings
 - Go to `Appearance` and click `Manage`
 - Under community themes search for Minimal and click `Use`
+
+Have a question? Join the [Minimal channel](https://discord.com/channels/686053708261228577/931008597557649410) on the official [Obsidian Discord](https://discord.gg/veuWUTm).
 
 ## Companion plugins
 
@@ -97,7 +99,7 @@ Most plugins work well with Minimal, but the following plugins have received spe
 - [Sliding Panes](https://github.com/deathau/sliding-panes-obsidian) — recommended spine width 36px
 - [Sortable](https://github.com/alexandru-dinu/obsidian-sortable) — recommended for cards and tables
 
-## Helper classes and filters
+## Helper filters and classes
 
 Additional documentation can be found at [publish.obsdian.md/kepano](https://publish.obsidian.md/kepano)
 
@@ -105,10 +107,11 @@ Additional documentation can be found at [publish.obsdian.md/kepano](https://pub
 
 Image filters can be added to create the following effects. Use them by adding the filter name at the end of the image link, e.g. `![[image.jpeg#invert]]`
 
-| Filter    | Description                                                   |
-| :-------- | :------------------------------------------------------------ |
-| `#invert` | Invert images in dark mode — ideal for charts and handwriting |
-| `#circle` | Crop image to a circle |
+| Filter     | Description                                                                        |
+| :--------- | :--------------------------------------------------------------------------------- |
+| `#invert`  | Invert images in dark mode — ideal for charts and handwriting on light backgrounds |
+| `#invertW` | Invert images in light mode — ideal for charts and handwriting on dark backgrounds |
+| `#circle`  | Crop image to a circle |
 
 ## CSS helper classes
 
@@ -139,17 +142,18 @@ Controls the width of elements by type. [Learn more.](https://github.com/kepano/
 
 ### Cards
 
-Using `cards` transforms Dataview tables cards that can be sorted using the [Sortable plugin](https://github.com/alexandru-dinu/obsidian-sortable). Compatible with table width classes.  Note that `cards` must be present for the other classes to work.
+Using `cards` transforms Dataview tables into cards that can be sorted using the [Sortable plugin](https://github.com/alexandru-dinu/obsidian-sortable). Compatible with table width classes.  Note that `cards` must be present for the other classes to work.
 
-| Class                | Description                                    |
-| :------------------- | :--------------------------------------------- |
-| `cards`              | Set all Dataview tables to card layout         |
-| `cards-align-bottom` | Align the last element of a card to the bottom |
-| `cards-cover`        | Images are resized to fill the defined space   |
-| `cards-16-9`         | Fit images in cards to 16:9 ratio              |
-| `cards-1-1`          | Fit images in cards to 1:1 ratio (square)      |
-| `cards-2-1`          | Fit images in cards to 2:1 ratio               |
-| `cards-2-3`          | Fit images in cards to 2:3 ratio               |
+| Class                 | Description                                      |
+| :-------------------- | :----------------------------------------------- |
+| `cards` (required)    | Set all Dataview tables to card layout           |
+| `cards-align-bottom`  | Align the last element of a card to the bottom   |
+| `cards-cover`         | Images are resized to fill the defined space     |
+| `cards-16-9`          | Fit images in cards to 16:9 ratio                |
+| `cards-1-1`           | Fit images in cards to 1:1 ratio (square)        |
+| `cards-2-1`           | Fit images in cards to 2:1 ratio                 |
+| `cards-2-3`           | Fit images in cards to 2:3 ratio                 |
+| `cards-cols-1` to `8` | Force a specific number of columns (from 1 to 8) |
 
 ### Tables and Dataview
 
@@ -158,6 +162,7 @@ Controls the row and column styling for tables. [Learn more.](https://github.com
 | Class           | Description                                         |
 | :-------------- | :-------------------------------------------------- |
 | `table-nowrap`  | Disable line wrapping in table cells                |
+| `table-numbers` | Add row numbers to tables                           |
 | `table-tabular` | Use tabular figures in tables                       |
 | `table-small`   | Use small font size in tables                       |
 | `table-tiny`    | Use tiny font size in tables                        |
@@ -201,7 +206,7 @@ Hotkeys are only available when using the Minimal Theme Settings plugin.
 
 ### Contributing
 
-If you would like add support for a plugin, or have found a bug you'd like to help fix, don't hesitate to open a pull request.
+If you would like add support for a plugin, or have found a bug you'd like to help fix, don't hesitate to open a pull request. Have a question? Join the [Minimal channel](https://discord.com/channels/686053708261228577/931008597557649410) on the official [Obsidian Discord](https://discord.gg/veuWUTm).
 
 ### Build instructions
 

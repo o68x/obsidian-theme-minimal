@@ -121,10 +121,19 @@ button.mod-cta,
 }
 
 /* Settings */
+.modal.mod-settings .vertical-tab-content-container {
+  padding-top:0;
+}
+.modal.mod-settings .vertical-tab-content-container .vertical-tab-content { 
+  padding-top:30px;
+}
 
-.horizontal-tab-content, .vertical-tab-content {
+.horizontal-tab-content,
+.vertical-tab-content {
   background:var(--background-primary);
   padding-bottom:100px;
+  padding-left:40px;
+  padding-right:40px;
 }
 .vertical-tab-header,
 .vertical-tab-content { 
@@ -132,6 +141,15 @@ button.mod-cta,
 }
 .plugin-list-plugins {
   overflow:visible;
+}
+.installed-plugins-container .clickable-icon {
+  margin:0 5px;
+}
+.installed-plugins-container .clickable-icon[aria-label="Uninstall"] {
+  margin:0 5px 0 3px;
+}
+.plugin-list-plugins .clickable-icon {
+  margin:0 10px 0 0;
 }
 .community-theme-container {
   padding-top:10px;
@@ -149,6 +167,12 @@ button.mod-cta,
 }
 .community-theme-filters-container, .hotkey-search-container {
   padding:0 0 20px 0;
+}
+.modal.mod-community-theme {
+  padding:0;
+}
+.modal.mod-community-theme .modal-content {
+  padding:30px;
 }
 .community-theme {
   padding:0;
