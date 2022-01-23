@@ -3091,8 +3091,8 @@ body:not(.is-mobile) input[type=range]:focus::-webkit-slider-thumb {
   --border-width-alt:0px; }
 
 /* Title borders */
-body.borders-title .workspace-leaf .workspace-leaf-content:not([data-type='empty']):not([data-type='graph']):not([data-type='localgraph']) .view-header,
-body.borders-title .workspace-split.mod-root .workspace-leaf:first-of-type:last-of-type .workspace-leaf-content:not([data-type='graph']):not([data-type='empty']):not([data-type='localgraph']) .view-header {
+body.borders-title .workspace-leaf .workspace-leaf-content:not([data-type='empty']):not([data-type='graph']):not([data-type='map']):not([data-type='localgraph']) .view-header,
+body.borders-title .workspace-split.mod-root .workspace-leaf:first-of-type:last-of-type .workspace-leaf-content:not([data-type='graph']):not([data-type='map']):not([data-type='empty']):not([data-type='localgraph']) .view-header {
   border-bottom: var(--border-width) solid var(--background-modifier-border); }
 
 body.borders-title .workspace-ribbon.mod-left.is-collapsed {
@@ -4192,14 +4192,14 @@ body.minimal-focus-mode.borders-title .workspace-ribbon.mod-left.is-collapsed {
   border-right: none; }
 
 /* Collapse header bar */
-body.minimal-focus-mode.borders-title .workspace-leaf .workspace-leaf-content:not([data-type=graph]):not([data-type=localgraph]) .view-header,
-body.minimal-focus-mode.borders-title .workspace-split.mod-root .workspace-leaf:first-of-type:last-of-type .workspace-leaf-content:not([data-type=graph]):not([data-type=empty]):not([data-type=localgraph]) .view-header {
+body.minimal-focus-mode.borders-title .workspace-leaf .workspace-leaf-content:not([data-type='map']):not([data-type=graph]):not([data-type=localgraph]) .view-header,
+body.minimal-focus-mode.borders-title .workspace-split.mod-root .workspace-leaf:first-of-type:last-of-type .workspace-leaf-content:not([data-type='map']):not([data-type=graph]):not([data-type=empty]):not([data-type=localgraph]) .view-header {
   border-bottom: var(--border-width) solid transparent; }
 
-body.minimal-focus-mode.borders-title .workspace-leaf .workspace-leaf-content:not([data-type=graph]):not([data-type=localgraph]) .view-header:focus-within,
-body.minimal-focus-mode.borders-title .workspace-split.mod-root .workspace-leaf:first-of-type:last-of-type .workspace-leaf-content:not([data-type=graph]):not([data-type=empty]):not([data-type=localgraph]) .view-header:focus-within,
-body.minimal-focus-mode.borders-title .workspace-leaf .workspace-leaf-content:not([data-type=graph]):not([data-type=localgraph]) .view-header:hover,
-body.minimal-focus-mode.borders-title .workspace-split.mod-root .workspace-leaf:first-of-type:last-of-type .workspace-leaf-content:not([data-type=graph]):not([data-type=empty]):not([data-type=localgraph]) .view-header:hover {
+body.minimal-focus-mode.borders-title .workspace-leaf .workspace-leaf-content:not([data-type='map']):not([data-type=graph]):not([data-type=localgraph]) .view-header:focus-within,
+body.minimal-focus-mode.borders-title .workspace-split.mod-root .workspace-leaf:first-of-type:last-of-type .workspace-leaf-content:not([data-type='map']):not([data-type=graph]):not([data-type=empty]):not([data-type=localgraph]) .view-header:focus-within,
+body.minimal-focus-mode.borders-title .workspace-leaf .workspace-leaf-content:not([data-type='map']):not([data-type=graph]):not([data-type=localgraph]) .view-header:hover,
+body.minimal-focus-mode.borders-title .workspace-split.mod-root .workspace-leaf:first-of-type:last-of-type .workspace-leaf-content:not([data-type='map']):not([data-type=graph]):not([data-type=empty]):not([data-type=localgraph]) .view-header:hover {
   border-bottom: var(--border-width) solid var(--background-modifier-border); }
 
 body:not(.is-mobile):not(.plugin-sliding-panes-rotate-header) .app-container .workspace-split.mod-root > .workspace-leaf .view-header {
