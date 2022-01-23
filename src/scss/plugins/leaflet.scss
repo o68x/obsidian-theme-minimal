@@ -6,6 +6,10 @@
 	--leaflet-buttons:rgba(0,0,0,0.5);
 }
 
+body .leaflet-container {
+	background-color:var(--background-secondary);
+}
+
 .map-100 .markdown-preview-sizer.markdown-preview-section .el-lang-leaflet:nth-child(3) {
 	margin-top:-11px
 }
